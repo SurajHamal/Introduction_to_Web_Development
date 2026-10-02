@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery - Contact & Pre-Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/bakery-logo.png" alt="North Star Bakery golden star logo" width="150" height="150">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact & Pre-Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us & Pre-Order Requests</h1>
+        <p>Have a question or want to secure your favorite sourdough loaf ahead of time? Fill out our request form below!</p>
+
+        <section>
+            <h2>Visit or Call</h2>
+            <p><strong>Address:</strong> 124 Artisan Way, Neighborhood District</p>
+            <p><strong>Phone:</strong> (555) 382-7427</p>
+            <p><strong>Hours:</strong> Tuesday – Sunday, 6:00 AM – 3:00 PM</p>
+        </section>
+
+        <section>
+            <h2>Inquiry & Pre-Order Form</h2>
+            <form action="/submit-order" method="post">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <div>
+                        <label for="full_name">Full Name:</label>
+                        <input type="text" id="full_name" name="full_name" required>
+                    </div>
+                    <div>
+                        <label for="email_address">Email Address:</label>
+                        <input type="email" id="email_address" name="email_address" required>
+                    </div>
+                    <div>
+                        <label for="pickup_date">Preferred Pickup Date:</label>
+                        <input type="date" id="pickup_date" name="pickup_date" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Order Details</legend>
+                    <div>
+                        <label for="request_type">Request Type:</label>
+                        <select id="request_type" name="request_type" required>
+                            <option value="">--Please select an option--</option>
+                            <option value="preorder">Pre-Order</option>
+                            <option value="general">General Question</option>
+                            <option value="catering">Event Catering</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="item_details">Item Details & Quantities:</label>
+                        <textarea id="item_details" name="item_details" rows="4" placeholder="Specify items and quantities..." required></textarea>
+                    </div>
+                    <div>
+                        <label for="allergy_notes">Allergy Notes (if applicable):</label>
+                        <textarea id="allergy_notes" name="allergy_notes" rows="3" placeholder="Let us know about any gluten, nut, or dairy allergies..."></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
