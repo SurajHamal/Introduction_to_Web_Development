@@ -28,6 +28,8 @@
             <p>Naturally fermented sourdoughs with crisp, caramelized crusts and tender, open crumbs.</p>
             <p><strong>Price Range:</strong> $6.00 – $9.50 per loaf</p>
             <img src="images/bakery-bread.png" alt="Assorted rustic sourdough boules and baguettes resting on a baker's rack" width="600" height="400">
+            <br><br>
+            <button class="fav-btn" data-product="Artisanal Bread Loaf">Save to Favorites</button>
         </section>
 
         <section>
@@ -36,6 +38,7 @@
                 <img src="images/bakery-signature-loaf.png" alt="Close-up of North Star Signature Loaf scored with a star pattern and dusted with flour" width="600" height="400">
                 <figcaption>Our flagship 36-hour fermented Signature Sourdough Loaf, baked dark for rich flavor.</figcaption>
             </figure>
+            <button class="fav-btn" data-product="Signature Sourdough Loaf">Save to Favorites</button>
         </section>
 
         <section>
@@ -47,17 +50,32 @@
                 <source media="(min-width: 800px)" srcset="images/bakery-feature-large.png">
                 <img src="images/bakery-feature-small.png" alt="Freshly baked pastries neatly arranged in display trays" width="600" height="400">
             </picture>
+            <br><br>
+            <button class="fav-btn" data-product="Flaky Butter Croissant">Save to Favorites</button>
         </section>
 
         <section>
             <h2>Cakes & Celebrations</h2>
             <p>Custom layer cakes, tortes, and tarts made to order for family gatherings and special events.</p>
             <p><strong>Price Range:</strong> $35.00 – $75.00</p>
+            <button class="fav-btn" data-product="Custom Celebration Cake">Save to Favorites</button>
+        </section>
+
+        <!-- New Interactive Favorites Section -->
+        <section>
+            <h2>Your Saved Favorites</h2>
+            <p>Click "Save to Favorites" on any product above to track your choices for your next visit!</p>
+            <ul id="favorites-list">
+                <li>No favorites saved yet.</li>
+            </ul>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
     </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

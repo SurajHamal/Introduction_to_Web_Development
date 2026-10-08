@@ -32,20 +32,22 @@
 
         <section>
             <h2>Inquiry & Pre-Order Form</h2>
-            <form action="/submit-order" method="post">
+            <form action="/submit-order" method="post" novalidate>
                 <fieldset>
                     <legend>Customer Information</legend>
                     <div>
                         <label for="full_name">Full Name:</label>
-                        <input type="text" id="full_name" name="full_name" required>
+                        <input type="text" id="full_name" name="full_name">
+                        <span id="name-error" class="error-message" style="color: #e53e3e; font-size: 0.85rem; margin-top: 0.25rem;"></span>
                     </div>
                     <div>
                         <label for="email_address">Email Address:</label>
-                        <input type="email" id="email_address" name="email_address" required>
+                        <input type="email" id="email_address" name="email_address">
+                        <span id="email-error" class="error-message" style="color: #e53e3e; font-size: 0.85rem; margin-top: 0.25rem;"></span>
                     </div>
                     <div>
                         <label for="pickup_date">Preferred Pickup Date:</label>
-                        <input type="date" id="pickup_date" name="pickup_date" required>
+                        <input type="date" id="pickup_date" name="pickup_date">
                     </div>
                 </fieldset>
 
@@ -53,7 +55,7 @@
                     <legend>Order Details</legend>
                     <div>
                         <label for="request_type">Request Type:</label>
-                        <select id="request_type" name="request_type" required>
+                        <select id="request_type" name="request_type">
                             <option value="">--Please select an option--</option>
                             <option value="preorder">Pre-Order</option>
                             <option value="general">General Question</option>
@@ -62,7 +64,7 @@
                     </div>
                     <div>
                         <label for="item_details">Item Details & Quantities:</label>
-                        <textarea id="item_details" name="item_details" rows="4" placeholder="Specify items and quantities..." required></textarea>
+                        <textarea id="item_details" name="item_details" rows="4" placeholder="Specify items and quantities..."></textarea>
                     </div>
                     <div>
                         <label for="allergy_notes">Allergy Notes (if applicable):</label>
@@ -78,5 +80,8 @@
     <footer>
         <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
     </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
