@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Document Metadata and Responsive Scaling -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery - Products</title>
+    <!-- Link to Main Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Site Header & Global Navigation Landmark -->
     <header>
         <img src="images/bakery-logo.png" alt="North Star Bakery golden star logo" width="150" height="150">
         <nav>
@@ -19,28 +22,35 @@
         </nav>
     </header>
 
+    <!-- Main Content Area -->
     <main>
+        <!-- Page Title & Introduction -->
         <h1>Our Artisanal Products</h1>
         <p>Handcrafted daily in small batches using traditional techniques and wholesome local ingredients.</p>
 
+        <!-- Product Section: Breads & Loaves -->
         <section>
             <h2>Breads & Loaves</h2>
             <p>Naturally fermented sourdoughs with crisp, caramelized crusts and tender, open crumbs.</p>
             <p><strong>Price Range:</strong> $6.00 – $9.50 per loaf</p>
             <img src="images/bakery-bread.png" alt="Assorted rustic sourdough boules and baguettes resting on a baker's rack" width="600" height="400">
             <br><br>
+            <!-- Interactive Favorite Button with Data Attribute -->
             <button class="fav-btn" data-product="Artisanal Bread Loaf">Save to Favorites</button>
         </section>
 
+        <!-- Product Section: Featured Signature Loaf -->
         <section>
             <h2>Featured Signature Loaf</h2>
             <figure>
                 <img src="images/bakery-signature-loaf.png" alt="Close-up of North Star Signature Loaf scored with a star pattern and dusted with flour" width="600" height="400">
                 <figcaption>Our flagship 36-hour fermented Signature Sourdough Loaf, baked dark for rich flavor.</figcaption>
             </figure>
+            <!-- Interactive Favorite Button with Data Attribute -->
             <button class="fav-btn" data-product="Signature Sourdough Loaf">Save to Favorites</button>
         </section>
 
+        <!-- Product Section: Daily Pastries (Responsive Picture Element) -->
         <section>
             <h2>Daily Pastries & Morning Treats</h2>
             <p>Flaky butter croissants, seasonal fruit Danishes, and cinnamon morning buns.</p>
@@ -51,17 +61,20 @@
                 <img src="images/bakery-feature-small.png" alt="Freshly baked pastries neatly arranged in display trays" width="600" height="400">
             </picture>
             <br><br>
+            <!-- Interactive Favorite Button with Data Attribute -->
             <button class="fav-btn" data-product="Flaky Butter Croissant">Save to Favorites</button>
         </section>
 
+        <!-- Product Section: Cakes & Celebrations -->
         <section>
             <h2>Cakes & Celebrations</h2>
             <p>Custom layer cakes, tortes, and tarts made to order for family gatherings and special events.</p>
             <p><strong>Price Range:</strong> $35.00 – $75.00</p>
+            <!-- Interactive Favorite Button with Data Attribute -->
             <button class="fav-btn" data-product="Custom Celebration Cake">Save to Favorites</button>
         </section>
 
-        <!-- New Interactive Favorites Section -->
+        <!-- Dynamic DOM Container for Saved Favorites (LocalStorage Integration) -->
         <section>
             <h2>Your Saved Favorites</h2>
             <p>Click "Save to Favorites" on any product above to track your choices for your next visit!</p>
@@ -71,11 +84,12 @@
         </section>
     </main>
 
+    <!-- Page Footer Landmark -->
     <footer>
         <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
     </footer>
 
-    <!-- Link to JavaScript -->
+    <!-- Link to Interactivity and Storage Script -->
     <script src="script.js"></script>
 </body>
 </html>

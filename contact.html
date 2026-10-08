@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Document Metadata and Responsive Scaling -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery - Contact & Pre-Order</title>
+    <!-- Link to Main Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Site Header & Global Navigation Landmark -->
     <header>
         <img src="images/bakery-logo.png" alt="North Star Bakery golden star logo" width="150" height="150">
         <nav>
@@ -19,10 +22,13 @@
         </nav>
     </header>
 
+    <!-- Main Content Area -->
     <main>
+        <!-- Page Title & Introduction -->
         <h1>Contact Us & Pre-Order Requests</h1>
         <p>Have a question or want to secure your favorite sourdough loaf ahead of time? Fill out our request form below!</p>
 
+        <!-- Business Contact Information Section -->
         <section>
             <h2>Visit or Call</h2>
             <p><strong>Address:</strong> 124 Artisan Way, Neighborhood District</p>
@@ -30,29 +36,42 @@
             <p><strong>Hours:</strong> Tuesday – Sunday, 6:00 AM – 3:00 PM</p>
         </section>
 
+        <!-- Pre-Order & Inquiry Form Section -->
         <section>
             <h2>Inquiry & Pre-Order Form</h2>
+            <!-- Form with novalidate to enable custom JavaScript validation -->
             <form action="/submit-order" method="post" novalidate>
+                
+                <!-- Fieldset 1: Customer Contact Information -->
                 <fieldset>
                     <legend>Customer Information</legend>
+                    
+                    <!-- Full Name Input & Dynamic Error Container -->
                     <div>
                         <label for="full_name">Full Name:</label>
                         <input type="text" id="full_name" name="full_name">
                         <span id="name-error" class="error-message" style="color: #e53e3e; font-size: 0.85rem; margin-top: 0.25rem;"></span>
                     </div>
+
+                    <!-- Email Address Input & Dynamic Error Container -->
                     <div>
                         <label for="email_address">Email Address:</label>
                         <input type="email" id="email_address" name="email_address">
                         <span id="email-error" class="error-message" style="color: #e53e3e; font-size: 0.85rem; margin-top: 0.25rem;"></span>
                     </div>
+
+                    <!-- Pickup Date Input -->
                     <div>
                         <label for="pickup_date">Preferred Pickup Date:</label>
                         <input type="date" id="pickup_date" name="pickup_date">
                     </div>
                 </fieldset>
 
+                <!-- Fieldset 2: Order Specifics and Custom Requests -->
                 <fieldset>
                     <legend>Order Details</legend>
+                    
+                    <!-- Request Type Dropdown Selection -->
                     <div>
                         <label for="request_type">Request Type:</label>
                         <select id="request_type" name="request_type">
@@ -62,26 +81,32 @@
                             <option value="catering">Event Catering</option>
                         </select>
                     </div>
+
+                    <!-- Item Quantities Textarea -->
                     <div>
                         <label for="item_details">Item Details & Quantities:</label>
                         <textarea id="item_details" name="item_details" rows="4" placeholder="Specify items and quantities..."></textarea>
                     </div>
+
+                    <!-- Allergy Notes Textarea -->
                     <div>
                         <label for="allergy_notes">Allergy Notes (if applicable):</label>
                         <textarea id="allergy_notes" name="allergy_notes" rows="3" placeholder="Let us know about any gluten, nut, or dairy allergies..."></textarea>
                     </div>
                 </fieldset>
 
+                <!-- Form Submission Button -->
                 <button type="submit">Submit Request</button>
             </form>
         </section>
     </main>
 
+    <!-- Page Footer Landmark -->
     <footer>
         <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
     </footer>
 
-    <!-- Link to JavaScript -->
+    <!-- Link to Interactivity and Form Validation Script -->
     <script src="script.js"></script>
 </body>
 </html>
