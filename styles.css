@@ -127,6 +127,13 @@ footer {
   }
 }
 
+/* Responsive Image Rule */
+img, picture, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ==========================================
    6. FORM & FIELDSET STYLING FIX
    ========================================== */
